@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoriesColViewCell" id="gTV-IL-0wX" customClass="CategoriesColViewCell" customModule="Zon_ae" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="124"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="124"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RkG-8Q-E52">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="124"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UqJ-L7-ix4">
+                                <rect key="frame" x="13" y="18" width="50" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grocery" translatesAutoresizingMaskIntoConstraints="NO" id="nEH-UX-5QB">
+                                        <rect key="frame" x="11" y="11" width="28" height="28"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.51372549019607838" green="0.87450980392156863" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="AzM-gn-bOE"/>
+                                    <constraint firstAttribute="width" secondItem="UqJ-L7-ix4" secondAttribute="height" multiplier="1:1" id="LMR-EO-Ngz"/>
+                                    <constraint firstAttribute="trailing" secondItem="nEH-UX-5QB" secondAttribute="trailing" constant="11" id="Nlj-LU-YRT"/>
+                                    <constraint firstItem="nEH-UX-5QB" firstAttribute="top" secondItem="UqJ-L7-ix4" secondAttribute="top" constant="11" id="Sq6-m5-DsU"/>
+                                    <constraint firstAttribute="bottom" secondItem="nEH-UX-5QB" secondAttribute="bottom" constant="11" id="jmn-kh-MF8"/>
+                                    <constraint firstItem="nEH-UX-5QB" firstAttribute="leading" secondItem="UqJ-L7-ix4" secondAttribute="leading" constant="11" id="k14-tf-IIO"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grocery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eV8-29-isA">
+                                <rect key="frame" x="13" y="76" width="54" height="18"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18,127 stores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52v-4i-516">
+                                <rect key="frame" x="13" y="95" width="79" height="15"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                                <color key="textColor" red="0.56078431370000004" green="0.60784313729999995" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="52v-4i-516" firstAttribute="leading" secondItem="eV8-29-isA" secondAttribute="leading" id="84J-Sn-yXR"/>
+                            <constraint firstItem="UqJ-L7-ix4" firstAttribute="top" secondItem="RkG-8Q-E52" secondAttribute="top" constant="18" id="PU8-Dr-6fy"/>
+                            <constraint firstItem="UqJ-L7-ix4" firstAttribute="leading" secondItem="RkG-8Q-E52" secondAttribute="leading" constant="13" id="Puv-2a-DRr"/>
+                            <constraint firstItem="52v-4i-516" firstAttribute="top" secondItem="eV8-29-isA" secondAttribute="bottom" constant="1" id="dzQ-15-8bi"/>
+                            <constraint firstItem="eV8-29-isA" firstAttribute="leading" secondItem="UqJ-L7-ix4" secondAttribute="leading" id="iYt-Ax-3uN"/>
+                            <constraint firstItem="eV8-29-isA" firstAttribute="top" secondItem="UqJ-L7-ix4" secondAttribute="bottom" constant="8" symbolic="YES" id="sdo-X4-Pbf"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="RkG-8Q-E52" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="LSb-lY-txp"/>
+                <constraint firstAttribute="bottom" secondItem="RkG-8Q-E52" secondAttribute="bottom" id="Pc6-aa-q3b"/>
+                <constraint firstAttribute="trailing" secondItem="RkG-8Q-E52" secondAttribute="trailing" id="YPf-5A-YNU"/>
+                <constraint firstItem="RkG-8Q-E52" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="huH-lM-FWT"/>
+            </constraints>
+            <size key="customSize" width="120" height="124"/>
+            <connections>
+                <outlet property="categoryDescription" destination="52v-4i-516" id="yZn-Ph-cJM"/>
+                <outlet property="categoryImageIV" destination="nEH-UX-5QB" id="lpL-sa-DCt"/>
+                <outlet property="categoryImageOV" destination="UqJ-L7-ix4" id="3GY-3l-0Tp"/>
+                <outlet property="categoryOV" destination="RkG-8Q-E52" id="gpO-E4-geJ"/>
+                <outlet property="categoryTitle" destination="eV8-29-isA" id="gmA-CS-fJ9"/>
+            </connections>
+            <point key="canvasLocation" x="124.6376811594203" y="118.52678571428571"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="grocery" width="26" height="26"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
