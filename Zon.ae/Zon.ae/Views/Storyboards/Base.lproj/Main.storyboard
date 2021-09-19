@@ -23,15 +23,8 @@
                                     <constraint firstAttribute="height" constant="45" id="IC7-do-MMd"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7tm-pd-MTM">
-                                <rect key="frame" x="0.0" y="851" width="414" height="45"/>
-                                <color key="backgroundColor" red="0.9532459378" green="0.96843057870000004" blue="0.98824161290000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="FrA-k3-S0N"/>
-                                </constraints>
-                            </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W95-q6-wBw">
-                                <rect key="frame" x="0.0" y="45" width="414" height="806"/>
+                                <rect key="frame" x="0.0" y="45" width="414" height="768"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="reO-Fn-LJd">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1064"/>
@@ -327,17 +320,20 @@
                         <constraints>
                             <constraint firstItem="W95-q6-wBw" firstAttribute="top" secondItem="uO1-3Y-Uau" secondAttribute="bottom" id="3IY-wW-F7p"/>
                             <constraint firstAttribute="trailing" secondItem="uO1-3Y-Uau" secondAttribute="trailing" id="6CV-QU-nYF"/>
-                            <constraint firstAttribute="bottom" secondItem="7tm-pd-MTM" secondAttribute="bottom" id="8ca-uu-MBd"/>
-                            <constraint firstAttribute="trailing" secondItem="7tm-pd-MTM" secondAttribute="trailing" id="DdN-KM-Bwi"/>
+                            <constraint firstItem="W95-q6-wBw" firstAttribute="bottom" secondItem="LZ8-tZ-xwZ" secondAttribute="bottom" id="7BN-0Q-jHG"/>
                             <constraint firstItem="uO1-3Y-Uau" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="JnV-gX-nHR"/>
-                            <constraint firstItem="7tm-pd-MTM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Si5-nv-2bE"/>
                             <constraint firstItem="W95-q6-wBw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VEd-lu-MjG"/>
-                            <constraint firstItem="7tm-pd-MTM" firstAttribute="top" secondItem="W95-q6-wBw" secondAttribute="bottom" id="X0O-qe-1mb"/>
                             <constraint firstAttribute="trailing" secondItem="W95-q6-wBw" secondAttribute="trailing" id="ieg-Lz-l5F"/>
                             <constraint firstItem="uO1-3Y-Uau" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mb1-pz-gBq"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="DlR-Yl-p12"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home_tab_unselected_ic" selectedImage="home_tab_selected_ic" id="DlR-Yl-p12" customClass="CBTabBarItem" customModule="Zon_ae" customModuleProvider="target">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <connections>
                         <outlet property="categoriesCollectionView" destination="juz-qJ-5RN" id="AfA-Q7-cGF"/>
                         <outlet property="recentOrdersTableView" destination="cwz-CR-hm0" id="dVm-bf-MWa"/>
@@ -349,26 +345,27 @@
             </objects>
             <point key="canvasLocation" x="175.36231884057972" y="114.50892857142857"/>
         </scene>
-        <!--Navigation Menu Base Controller-->
+        <!--Bubble Tab Bar Controller-->
         <scene sceneID="wtr-c0-M7c">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="tHH-75-lrX" customClass="NavigationMenuBaseController" customModule="Zon_ae" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="tHH-75-lrX" customClass="BubbleTabBarController" customModule="Zon_ae" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mJm-Vb-Eme">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="JHV-yL-kPJ"/>
+                        <segue destination="dDf-fI-BIt" kind="relationship" relationship="viewControllers" id="aJT-Db-cNF"/>
+                        <segue destination="yAT-vz-2FZ" kind="relationship" relationship="viewControllers" id="HKl-e3-bUQ"/>
+                        <segue destination="cVa-0L-aMw" kind="relationship" relationship="viewControllers" id="1Bm-xE-Nws"/>
+                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cNv-Fo-iIN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <view contentMode="scaleToFill" id="KsZ-Cv-9oZ">
-                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <viewLayoutGuide key="safeArea" id="T6p-Yw-L1X"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                </view>
             </objects>
-            <point key="canvasLocation" x="-1257" y="102"/>
+            <point key="canvasLocation" x="-968" y="115"/>
         </scene>
         <!--QuotationsVC-->
         <scene sceneID="lnl-Yr-deZ">
@@ -506,7 +503,14 @@
                             <constraint firstAttribute="trailing" secondItem="YnC-Yt-REF" secondAttribute="trailing" id="xHE-RK-FUg"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="2R8-mO-wYu"/>
+                    <tabBarItem key="tabBarItem" title="Quotations" image="quotation_tab_unselected_ic" selectedImage="quotation_tab_selected_ic" id="2R8-mO-wYu" customClass="CBTabBarItem" customModule="Zon_ae" customModuleProvider="target">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6yw-Ih-qge" sceneMemberID="firstResponder"/>
             </objects>
@@ -648,7 +652,14 @@
                             <constraint firstItem="twp-Af-VIS" firstAttribute="leading" secondItem="YUX-cP-DbH" secondAttribute="leading" id="pIN-Qr-891"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="T0s-Lu-Uur"/>
+                    <tabBarItem key="tabBarItem" title="Delivery" image="delivery_tab_unselected_ic" selectedImage="delivery_tab_selected_ic" id="T0s-Lu-Uur" customClass="CBTabBarItem" customModule="Zon_ae" customModuleProvider="target">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xAs-5P-paE" sceneMemberID="firstResponder"/>
             </objects>
@@ -969,7 +980,14 @@
                             <constraint firstItem="Jzs-y6-Cln" firstAttribute="leading" secondItem="UcP-7G-YjB" secondAttribute="leading" id="gdZ-pw-R1q"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="FQ1-uZ-SWs"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile_tab_unselected_ic" selectedImage="profile_tab_selected_ic" id="FQ1-uZ-SWs" customClass="CBTabBarItem" customModule="Zon_ae" customModuleProvider="target">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Ed-0Q-doo" sceneMemberID="firstResponder"/>
             </objects>
@@ -978,13 +996,21 @@
     </scenes>
     <resources>
         <image name="cart_ic" width="20" height="20"/>
+        <image name="delivery_tab_selected_ic" width="20" height="16.5"/>
+        <image name="delivery_tab_unselected_ic" width="20" height="16.5"/>
         <image name="help_ic" width="20" height="20"/>
         <image name="home_banner" width="335" height="125"/>
+        <image name="home_tab_selected_ic" width="20" height="20"/>
+        <image name="home_tab_unselected_ic" width="20" height="20"/>
         <image name="location_ic" width="20" height="20"/>
         <image name="logo" width="69" height="26"/>
         <image name="notification_ic" width="17" height="20"/>
         <image name="notification_profile_ic" width="17" height="20"/>
         <image name="profile_image" width="1872" height="1872"/>
+        <image name="profile_tab_selected_ic" width="18" height="20"/>
+        <image name="profile_tab_unselected_ic" width="18" height="20"/>
+        <image name="quotation_tab_selected_ic" width="18" height="20"/>
+        <image name="quotation_tab_unselected_ic" width="18" height="20"/>
         <image name="search_ic" width="20" height="25"/>
         <image name="sign_out_ic" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
