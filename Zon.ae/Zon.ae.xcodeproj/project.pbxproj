@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		0E0F703CD55592A1E655A4A6 /* libPods-Zon.ae.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77F12C5A7FE12CF065B6701E /* libPods-Zon.ae.a */; };
 		FA2874FB26F62EEC00CB2660 /* DataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2874FA26F62EEC00CB2660 /* DataFetcher.swift */; };
-		FA28750026F63E6500CB2660 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2874FD26F63E6500CB2660 /* TabItem.swift */; };
-		FA28750126F63E6500CB2660 /* TabNavigationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2874FE26F63E6500CB2660 /* TabNavigationMenu.swift */; };
-		FA28750226F63E6500CB2660 /* NavigationMenuBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2874FF26F63E6500CB2660 /* NavigationMenuBaseController.swift */; };
 		FA4335F826F611F400473E68 /* CategoriesColViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4335F626F611F400473E68 /* CategoriesColViewCell.swift */; };
 		FA4335F926F611F400473E68 /* CategoriesColViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA4335F726F611F400473E68 /* CategoriesColViewCell.xib */; };
 		FA4335FE26F6124D00473E68 /* RecentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4335FC26F6124D00473E68 /* RecentTableViewCell.swift */; };
@@ -62,9 +59,6 @@
 		77F12C5A7FE12CF065B6701E /* libPods-Zon.ae.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Zon.ae.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB4895DCD2B5A01D49AC677E /* Pods-Zon.ae.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zon.ae.debug.xcconfig"; path = "Target Support Files/Pods-Zon.ae/Pods-Zon.ae.debug.xcconfig"; sourceTree = "<group>"; };
 		FA2874FA26F62EEC00CB2660 /* DataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcher.swift; sourceTree = "<group>"; };
-		FA2874FD26F63E6500CB2660 /* TabItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
-		FA2874FE26F63E6500CB2660 /* TabNavigationMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationMenu.swift; sourceTree = "<group>"; };
-		FA2874FF26F63E6500CB2660 /* NavigationMenuBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationMenuBaseController.swift; sourceTree = "<group>"; };
 		FA4335F626F611F400473E68 /* CategoriesColViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesColViewCell.swift; sourceTree = "<group>"; };
 		FA4335F726F611F400473E68 /* CategoriesColViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesColViewCell.xib; sourceTree = "<group>"; };
 		FA4335FC26F6124D00473E68 /* RecentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTableViewCell.swift; sourceTree = "<group>"; };
@@ -140,16 +134,6 @@
 				77F12C5A7FE12CF065B6701E /* libPods-Zon.ae.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FA2874FC26F63E6500CB2660 /* Navigation Menu */ = {
-			isa = PBXGroup;
-			children = (
-				FA2874FD26F63E6500CB2660 /* TabItem.swift */,
-				FA2874FE26F63E6500CB2660 /* TabNavigationMenu.swift */,
-				FA2874FF26F63E6500CB2660 /* NavigationMenuBaseController.swift */,
-			);
-			path = "Navigation Menu";
 			sourceTree = "<group>";
 		};
 		FA4335EF26F6117300473E68 /* Controllers */ = {
@@ -263,7 +247,6 @@
 				FA4335F126F6118600473E68 /* ViewModel */,
 				FA4335F026F6118000473E68 /* Model */,
 				FA4335EF26F6117300473E68 /* Controllers */,
-				FA2874FC26F63E6500CB2660 /* Navigation Menu */,
 				FAE67DD326F5ED7200896142 /* Resources */,
 				FAFD6E8826F5F6200077CAF9 /* Extensions */,
 				FAE67D6B26F5EB6E00896142 /* Assets.xcassets */,
@@ -462,14 +445,11 @@
 				FAFD6EA626F5F6210077CAF9 /* PresentationController.swift in Sources */,
 				FAFD6EBA26F5F6210077CAF9 /* UISearchBar+Extension.swift in Sources */,
 				FAFD6EB226F5F6210077CAF9 /* WaveFormDrawer.swift in Sources */,
-				FA28750126F63E6500CB2660 /* TabNavigationMenu.swift in Sources */,
 				FA6C034426F74D88005DAAC5 /* BubbleTabBarController.swift in Sources */,
 				FAFD6EAB26F5F6210077CAF9 /* DismissTransition.swift in Sources */,
-				FA28750226F63E6500CB2660 /* NavigationMenuBaseController.swift in Sources */,
 				FAFD6EB726F5F6210077CAF9 /* SJCenterFlowLayout.swift in Sources */,
 				FAFD6EB626F5F6210077CAF9 /* UICollectionView+Extension.swift in Sources */,
 				FAFD6EB926F5F6210077CAF9 /* UITextField+Extension.swift in Sources */,
-				FA28750026F63E6500CB2660 /* TabItem.swift in Sources */,
 				FA43360926F6174500473E68 /* HomeVC.swift in Sources */,
 				FA43360F26F617C500473E68 /* ProfileVC.swift in Sources */,
 				FAFD6EBC26F5F6210077CAF9 /* UILable+Extension.swift in Sources */,
