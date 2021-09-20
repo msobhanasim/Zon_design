@@ -136,6 +136,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FA2B37B826F86838001357DA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FA2874FA26F62EEC00CB2660 /* DataFetcher.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		FA4335EF26F6117300473E68 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,7 +169,6 @@
 			isa = PBXGroup;
 			children = (
 				FA43360426F614EA00473E68 /* HomeViewModel.swift */,
-				FA2874FA26F62EEC00CB2660 /* DataFetcher.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -245,6 +252,7 @@
 				FA6C033F26F74D42005DAAC5 /* BubbleTabbarClasses */,
 				FA4335F326F611AC00473E68 /* Views */,
 				FA4335F126F6118600473E68 /* ViewModel */,
+				FA2B37B826F86838001357DA /* Network */,
 				FA4335F026F6118000473E68 /* Model */,
 				FA4335EF26F6117300473E68 /* Controllers */,
 				FAE67DD326F5ED7200896142 /* Resources */,
